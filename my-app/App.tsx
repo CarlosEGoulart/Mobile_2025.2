@@ -7,7 +7,7 @@ import React from 'react';
 export default function App() {
   const handleSearch = (keywords: string) => {
     console.log("Pesquisando: " + keywords)
-  
+  };
   
   return (
     <View style={styles.container}>
@@ -41,4 +41,3 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
 });
-}

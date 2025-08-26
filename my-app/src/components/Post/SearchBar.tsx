@@ -1,4 +1,4 @@
-import { View, Text, Button, TextInput } from 'react-native'
+import { StyleSheet, View, Button, TextInput} from 'react-native';
 import React from 'react'
 
 interface FormProp {
@@ -16,12 +16,21 @@ export default function SearchBar(props: FormProp) {
   
     return (
     <View>
-      <Text>SearchBar</Text>
       <TextInput 
+      style={styles.input}
       onChangeText={setName}
       value={name}
       placeholder="Pesquisar"/>
       <Button title="Pesquisar" onPress={onSearch}/>
     </View>
   )
+
 }
+const styles = StyleSheet.create({
+    input: {
+      height: 40,
+      margin: 12,
+      borderWidth: 1,
+      padding: 10,
+    },
+  });
