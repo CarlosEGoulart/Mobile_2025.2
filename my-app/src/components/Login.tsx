@@ -1,14 +1,25 @@
 import { StyleSheet, View, Text, TextInput, Button } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Login() {
   const [username, onChangeUser] = React.useState('');
-  const [password, onChangePass] = React.useState('');
+  let [password, onChangePass] = React.useState('');
+  let [passConfirm, onChangeConfirm] = React.useState('');
+
 
   const handleLogin = () => {
     console.log("Usuario: " + username);
     console.log("Senha: " + password);
   }
+
+  const handleReset = () => {
+    password = '';
+    passConfirm = '';
+  }
+
+  React.useEffect(()=> {
+    console.log('Senha resetada')
+  }, [handleReset]);
 
   return (
     <View>
@@ -28,6 +39,17 @@ export default function Login() {
             value={password}
             secureTextEntry={true}
         />
+
+        <Text>Confirm Password</Text>
+        <TextInput
+          style={styles.input}
+          placeholder='Confirme sua senha'
+          onChangeText={onChangeConfirm}
+          value={passConfirm}
+          secureTextEntry={true}
+        />
+
+        <Button title='Reset Password' onPress={handleReset}/>
         <Button title='Login' onPress={handleLogin}/>
     </View>
   )
