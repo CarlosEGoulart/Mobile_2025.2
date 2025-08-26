@@ -1,11 +1,19 @@
 import { StyleSheet, Text, View } from 'react-native';
 import Login from './src/components/Login'
 import Post from "./src/components/Post/index"
+import SearchBar from './src/components/Post/SearchBar';
 
 export default function App() {
+  const handleSearch = (keywords: string) => {
+    console.log("Pesquisando: " + keywords)
+  
+  
   return (
     <View style={styles.container}>
       <Text>Carlosgram</Text>
+      <Text>----Pesquisa----</Text>
+      <SearchBar handleSearch={handleSearch}/>
+      <Text>----Login----</Text>
       <Login />
       <Text>----Posts----</Text>
       <Post author='Julia' 

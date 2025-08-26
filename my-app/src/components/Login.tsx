@@ -2,8 +2,8 @@ import { StyleSheet, View, Text, TextInput, Button } from 'react-native'
 import React from 'react'
 
 export default function Login() {
-  const [username, onChangeUser] = React.useState('Seu login');
-  const [password, onChangePass] = React.useState('Sua senha');
+  const [username, onChangeUser] = React.useState('');
+  const [password, onChangePass] = React.useState('');
 
   const handleLogin = () => {
     console.log("Usuario: " + username);
@@ -15,6 +15,7 @@ export default function Login() {
         <Text>User</Text>
         <TextInput
             style={styles.input}
+            placeholder='Seu Login'
             onChangeText={onChangeUser}
             value={username}
         />
@@ -22,6 +23,7 @@ export default function Login() {
         <Text>Password</Text>
         <TextInput
             style={styles.input}
+            placeholder='Sua Senha'
             onChangeText={onChangePass}
             value={password}
             secureTextEntry={true}
