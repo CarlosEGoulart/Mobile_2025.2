@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Login from './src/components/Login'
 import Post from "./src/components/Post/index"
 import SearchBar from './src/components/Post/SearchBar';
+import React from 'react';
 
 export default function App() {
   const handleSearch = (keywords: string) => {
@@ -40,3 +41,4 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
 });
+}

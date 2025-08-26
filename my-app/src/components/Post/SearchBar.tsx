@@ -1,10 +1,9 @@
-import { View, Text, Button } from 'react-native'
+import { View, Text, Button, TextInput } from 'react-native'
 import React from 'react'
 
 interface FormProp {
     handleSearch(keywords: string):void
 }
-
 
 export default function SearchBar(props: FormProp) {
     const[name, setName] = React.useState("")
