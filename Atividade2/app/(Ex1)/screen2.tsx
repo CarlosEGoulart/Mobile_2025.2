@@ -1,13 +1,11 @@
-import { View, Text, StyleSheet, Button } from 'react-native'
-import React from 'react'
-import { Stack, Link} from 'expo-router';
+import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import { Link, Stack } from 'expo-router';
 
-export default function screen1() {
-  
+export default function screen2() {
   return (
     <View style={styles.container}>
-      <Text>screen1</Text>
-      
+      <Text>Tela 2</Text>
       <Stack />
     </View>
   );
@@ -19,5 +17,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 24,
-  }
-})
+  },
+});
