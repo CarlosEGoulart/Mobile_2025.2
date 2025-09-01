@@ -1,17 +1,16 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import React from 'react';
-import { Link, Stack } from 'expo-router';
+import { Link } from 'expo-router';
 
 export default function screen1() {
   return (
     <View style={styles.container}>
       <Text>Tela 1</Text>
-      <Link href="/(Ex1)/screen2" asChild>
+      <Link href="/(Ex1)/ex1Screen2" asChild>
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Ir para a Tela 2</Text>
         </TouchableOpacity>
       </Link>
-      <Stack />
     </View>
   );
 }

@@ -1,23 +1,22 @@
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import React from 'react';
 import { Link } from 'expo-router';
-import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 
-export default function index() {
+export default function screen1() {
+  const id: number = Math.ceil((Math.random())*10)
+  
+  
   return (
     <View style={styles.container}>
-      <Text>HomePage</Text>
-      <Link href="/(Ex1)/ex1Screen1" asChild>
+      <Text>O ID passado é: {id}</Text>
+    
+      <Link href={`/(Ex2)/${id}`} asChild>
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Ir para o Exercicio 1</Text>
-        </TouchableOpacity>
-      </Link>
-
-      <Link href="/(Ex2)/ex2Screen1" asChild>
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Ir para o Exercicio 2</Text>
+          <Text style={styles.buttonText}>Ir para a Tela 2</Text>
         </TouchableOpacity>
       </Link>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -26,7 +25,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 24,
-    fontWeight: 'bold'
   },
   button: {
     backgroundColor: '#1d1d1dff',
