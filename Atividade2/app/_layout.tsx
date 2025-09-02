@@ -17,6 +17,9 @@ export default function StackLayout() {
       <Stack.Screen name="(Ex1)/ex1Screen2" options={{ headerShown: true, title: 'Tela 2 do EX1' }} />
       <Stack.Screen name="(Ex2)/ex2Screen1" options={{ headerShown: true, title: 'Tela 1 do EX2' }} />
       <Stack.Screen name="(Ex2)/[id]" options={{ headerShown: true, title: 'Tela 2 do EX2' }} />
+      <Stack.Screen name="(Ex3)/ex3Screen1" options={{ headerShown: true, title: 'Tela 1 do EX3' }} />
+      <Stack.Screen name="(Ex3)/ex3Screen2" options={{ headerShown: true, title: 'Tela 2 do EX3' }} />
     </Stack>
+
   );
 }

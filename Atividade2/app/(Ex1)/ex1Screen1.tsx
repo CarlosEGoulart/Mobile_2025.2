@@ -5,10 +5,10 @@ import { Link } from 'expo-router';
 export default function screen1() {
   return (
     <View style={styles.container}>
-      <Text>Tela 1</Text>
+      <Text>Tela 1 do Exercicio 1</Text>
       <Link href="/(Ex1)/ex1Screen2" asChild>
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Ir para a Tela 2</Text>
+          <Text style={styles.buttonText}>Ir para a Tela 2 do Exercicio 1</Text>
         </TouchableOpacity>
       </Link>
     </View>
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     padding: 24,
   },
   button: {
-    backgroundColor: '#1d1d1dff',
+    backgroundColor: '#383838',
     padding: 10,
     borderRadius: 8,
     alignItems: 'center',

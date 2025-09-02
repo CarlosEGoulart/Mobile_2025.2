@@ -16,6 +16,12 @@ export default function index() {
           <Text style={styles.buttonText}>Ir para o Exercicio 2</Text>
         </TouchableOpacity>
       </Link>
+
+      <Link href="/(Ex3)/ex3Screen1" asChild>
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Ir para o Exercicio 3</Text>
+        </TouchableOpacity>
+      </Link>
     </View>
   );
 }
@@ -29,7 +35,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   button: {
-    backgroundColor: '#1d1d1dff',
+    backgroundColor: '#383838',
     padding: 10,
     borderRadius: 8,
     alignItems: 'center',
