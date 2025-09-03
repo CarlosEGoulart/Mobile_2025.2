@@ -1,4 +1,5 @@
 import { Link } from 'expo-router';
+import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 
 export default function index() {
@@ -22,6 +23,14 @@ export default function index() {
           <Text style={styles.buttonText}>Ir para o Exercicio 3</Text>
         </TouchableOpacity>
       </Link>
+
+      <Link href="/(Ex5)/(tabs)/Profile" asChild>
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Ir para o Exercicio 5</Text>
+        </TouchableOpacity>
+      </Link>
+
+      
     </View>
   );
 }
