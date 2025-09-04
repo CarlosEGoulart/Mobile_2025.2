@@ -1,13 +1,17 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
+import { useLocalSearchParams } from 'expo-router';
 
-export default function Profile() {
+export default function Post() {
+    const { postId } = useLocalSearchParams();
+  
   return (
     <View style={styles.container}>
-      <Text>Carlos Eduardo Goulart Oliveira</Text>
+      <Text>Post {postId}</Text>
     </View>
   )
 }
+
 
 const styles = StyleSheet.create({
   container: {
