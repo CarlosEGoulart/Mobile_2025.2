@@ -19,7 +19,11 @@ import {
   
     return (
       <TouchableOpacity style={styles.container}>
-        <AntDesign name={icon as any} size={24} color={color} />
+        {typeof icon === 'string' ? (
+          <AntDesign name={icon as any} size={24} color={color} />
+        ) : (
+          icon
+        )}
   
         <Text style={[styles.text, { color }]}>{text}</Text>
       </TouchableOpacity>

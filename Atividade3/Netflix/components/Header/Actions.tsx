@@ -1,19 +1,18 @@
 import {
     View,
-    Text,
     StyleSheet,
-    Touchable,
     TouchableOpacity,
   } from "react-native";
   import React from "react";
   import AntDesign from "@expo/vector-icons/AntDesign";
+  import { MaterialIcons } from "@expo/vector-icons";
   import theme from "@/constants/theme";
   
   export default function Actions() {
     return (
       <View style={styles.container}>
         <TouchableOpacity>
-          <AntDesign name="download" size={24} color="white" />
+          <MaterialIcons name="cast" size={24} color="white" />
         </TouchableOpacity>
   
         <TouchableOpacity>

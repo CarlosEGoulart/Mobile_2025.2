@@ -1,16 +1,15 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import React from "react";
 import theme from "@/constants/theme";
 import IconButton from "./IconButton";
-import AntDesign from "@expo/vector-icons/AntDesign"; // Isso não parece ser usado
 
 export default function Footer() {
   return (
     <View style={styles.container}>
       <IconButton icon="home" text="Início" active />
-      <IconButton icon="rocket1" text="Jogos" />
+      <IconButton icon="download" text="Downloads" />
       <IconButton icon="playcircleo" text="Novidades" />
-      <IconButton icon="codesquareo" text="Minha Netflix" />
+      <IconButton icon="user" text="Minha Netflix" />
     </View>
   );
 }
