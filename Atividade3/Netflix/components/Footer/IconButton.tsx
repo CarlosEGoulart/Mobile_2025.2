@@ -5,11 +5,11 @@ import {
     TouchableOpacity,
     StyleSheet,
   } from "react-native";
-  import React, { ReactNode } from "react";
+  import React from 'react';
   import AntDesign from "@expo/vector-icons/AntDesign";
   
   type IconButtonProps = {
-    icon: ReactNode;
+    icon: React.ReactNode;
     text: string;
     active?: boolean;
   } & TouchableOpacityProps;
