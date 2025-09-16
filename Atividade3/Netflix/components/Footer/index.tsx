@@ -1,15 +1,14 @@
 import { View, StyleSheet } from "react-native";
 import React from "react";
-import theme from "@/constants/theme";
 import IconButton from "./IconButton";
 
 export default function Footer() {
   return (
     <View style={styles.container}>
-      <IconButton icon="home" text="Início" active />
-      <IconButton icon="download" text="Downloads" />
-      <IconButton icon="playcircleo" text="Novidades" />
-      <IconButton icon="user" text="Minha Netflix" />
+      <IconButton text="Início" icon="home" />
+      <IconButton text="Jogos" icon="game-controller-outline" />
+      <IconButton text="Em breve" icon="play-circle-outline" />
+      <IconButton text="Minha Netflix" icon="person-outline" />
     </View>
   );
 }
@@ -17,8 +16,7 @@ export default function Footer() {
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    padding: theme.dimension.xs,
     justifyContent: "space-around",
-    paddingHorizontal: theme.dimension.xs,
+    paddingVertical: 10,
   },
 });
